@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enrollment Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <section class="container">
+        <header>Registration Form</header>
+        <form action="#" class="form">
+            <div class="input-box">
+                <label>Full Name</label>
+                <input type="text" id="txt1" placeholder="Enter full name" required />
+            </div>
+
+            <div class="input-box">
+                <label>Email Address</label>
+                <input type="text" id="txt2" placeholder="Enter email address" required />
+            </div>
+
+            <div class="column">
+                <div class="input-box">
+                    <label>Phone Number</label>
+                    <input type="number" id="num1" placeholder="Enter phone number" required />
+                </div>
+                <div class="input-box">
+                    <label>Birth Date</label>
+                    <input type="date" id="dat1" placeholder="Enter birth date" required />
+                </div>
+            </div>
+            <!--Project done my Mohammed Farhan Khan
+                USN:- 1AJ20CS043
+                TASK-3 -->
+            <div class="gender-box">
+                <h3>Gender</h3>
+                <div class="gender-option">
+                    <div class="gender">
+                        <input type="radio" id="check-male" name="gender" checked />
+                        <label for="check-male">male</label>
+                    </div>
+                    <div class="gender">
+                        <input type="radio" id="check-female" name="gender" />
+                        <label for="check-female">Female</label>
+                    </div>
+                    <div class="gender">
+                        <input type="radio" id="check-other" name="gender" />
+                        <label for="check-other">prefer not to say</label>
+                    </div>
+                </div>
+            </div>
+            <div class="course-box">
+                <h3>Courses</h3>
+                <div class="course-option">
+                    <div class="course">
+                        <input type="radio" id="check-web" name="course" checked />
+                        <label for="check-web">Web Development</label>
+                    </div>
+                    <div class="course">
+                        <input type="radio" id="check-ai" name="course" />
+                        <label for="check-ai">AI/ML</label>
+                    </div>
+                    <div class="course">
+                        <input type="radio" id="check-data" name="course" />
+                        <label for="check-data">Big Data</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="input-box address">
+                <label>Address</label>
+                <input type="text" id="adds1" placeholder="Enter street address" required />
+                <div class="column">
+                    <div class="select-box">
+                        <select>
+                            <option hidden>Country</option>
+                            <option>America</option>
+                            <option>Japan</option>
+                            <option>India</option>
+                            <option>Nepal</option>
+                        </select>
+                    </div>
+                </div>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+        </form><br />
+        <br />
+        <!----  <form>
+        <header>Details</header>
+        <p id="re"></p></form> -->
+    </section>
+
+    <section class="reflect">
+        <header>Details</header>
+        <p id="re"></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
